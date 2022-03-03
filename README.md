@@ -15,10 +15,10 @@ Windows Forms desktop app purposely containing a SQL Injection security flaw usi
 
 ![Image example SQL Injections](Screenshots/Screenshot_BobbyTablesTestApp.png)
 
-The app also containes multiple modes of input handling, enabling interactive testing of more and less secure text input.
+The app also contains multiple modes of input handling, enabling interactive testing of more and less secure text input.
  * Unsafe - Direct user-input is concatenated to form a SQL query.
  * Escaped - User-input is first escaped to prevent most injection vulnerabilities, and then concatenated to for SQL query.
- * Parameterized - Most secure and preffered manner of handling SQL command creations, defining all possible user-input parameters separately from the actual query.
+ * Parameterized - Most secure and preferred manner of handling SQL command creations, defining all possible user-input parameters separately from the actual query.
 
 Have fun -- and be safe!
 
