@@ -7,7 +7,7 @@ Windows Forms desktop app purposely containing a SQL Injection security flaw usi
  
  [https://xkcd.com/327/](https://xkcd.com/327/)  
 
-(Basic app, showing all database info being dumped via SQL Injection)
+(Basic app, showing all database info being dumped via SQL Injection.)
 
 ![Image of all db names dumbed](Screenshots/Screenshot_DumpAll.png)
 
@@ -15,5 +15,11 @@ Windows Forms desktop app purposely containing a SQL Injection security flaw usi
 
 ![Image example SQL Injections](Screenshots/Screenshot_BobbyTablesTestApp.png)
 
+The app also containes multiple modes of input handling, enabling interactive testing of more and less secure text input.
+ * Unsafe - Direct user-input is concatenated to form a SQL query.
+ * Escaped - User-input is first escaped to prevent most injection vulnerabilities, and then concatenated to for SQL query.
+ * Parameterized - Most secure and preffered manner of handling SQL command creations, defining all possible user-input parameters separately from the actual query.
+
+Have fun -- and be safe!
 
 Created by Taber with a computer.
